@@ -525,7 +525,6 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   };
   attributes: {
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    description: Schema.Attribute.Blocks & Schema.Attribute.Required;
     images: Schema.Attribute.Media<'images' | 'files', true> &
       Schema.Attribute.Required;
     video: Schema.Attribute.Media<'files' | 'videos', true>;
@@ -533,6 +532,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::category.category'
     >;
+    description: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
