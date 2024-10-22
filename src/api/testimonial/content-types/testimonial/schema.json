@@ -4,7 +4,8 @@
   "info": {
     "singularName": "testimonial",
     "pluralName": "testimonials",
-    "displayName": "testimonial"
+    "displayName": "testimonial",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,6 +18,10 @@
     },
     "review": {
       "type": "richtext",
+      "required": true
+    },
+    "job": {
+      "type": "string",
       "required": true
     }
   }

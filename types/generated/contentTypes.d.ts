@@ -581,6 +581,7 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
     singularName: 'testimonial';
     pluralName: 'testimonials';
     displayName: 'testimonial';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -588,6 +589,7 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
   attributes: {
     name: Schema.Attribute.String & Schema.Attribute.Required;
     review: Schema.Attribute.RichText & Schema.Attribute.Required;
+    job: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
